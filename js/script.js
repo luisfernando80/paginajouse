@@ -7,6 +7,7 @@ elemHeader.addEventListener("click", () => {
   const barraBaixo = barras[1];
 
   elemHeader.classList.toggle("grid-rows-[3.75rem_1fr]");
+  elemHeader.classList.toggle("h-screen");
 
   barraCima.classList.toggle("rotate-45");
   barraCima.classList.toggle("translate-y-[0.28125rem]");
