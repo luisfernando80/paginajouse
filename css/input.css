@@ -6,3 +6,8 @@
   font-family: "Avenir";
   src: url(../fonts/AvenirLTStd-Book.otf);
 }
+
+@font-face {
+  font-family: "Avenir Heavy";
+  src: url(../fonts/AvenirLTStd-Heavy.otf);
+}

@@ -1,3 +1,5 @@
+// MENU HEADER
+
 const elemHeader = document.querySelector("header");
 const elemMenu = document.querySelector(".js-menu");
 
@@ -15,3 +17,5 @@ elemHeader.addEventListener("click", () => {
   barraBaixo.classList.toggle("-rotate-45");
   barraBaixo.classList.toggle("-translate-y-[0.28125rem]");
 });
+
+// PERSONALIZAÇÃO CARTEIRA

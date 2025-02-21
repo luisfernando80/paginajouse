@@ -5,6 +5,7 @@ module.exports = {
     extend: {},
     fontFamily: {
       avenir: ["Avenir", "sans-serif"],
+      avenir_heavy: ["Avenir Heavy", "sans-serif"],
     },
   },
   plugins: [],
