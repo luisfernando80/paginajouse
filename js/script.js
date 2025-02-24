@@ -19,3 +19,34 @@ elemHeader.addEventListener("click", () => {
 });
 
 // PERSONALIZAÇÃO CARTEIRA
+
+const elemImgCarteira = document.querySelector(".js-img-carteira");
+const elemTextoPersonalizacao = document.querySelector(".js-texto-cor");
+const elemsBolinha = document.querySelectorAll(".js-bolinha");
+
+elemsBolinha.forEach((elemBolinha) => {
+  elemBolinha.addEventListener("click", () => {
+    const novaCor = elemBolinha.getAttribute("data-cor");
+    const corAtual = elemImgCarteira.getAttribute("data-cor-atual");
+    const textoCor = elemBolinha.getAttribute("data-texto-cor");
+
+    // Tirar a borda preta e adicionar a cinza em todos os elementos
+    elemsBolinha.forEach((elem) => {
+      elem.classList.remove("border-black");
+      elem.classList.add("border-gray-300");
+    });
+
+    // Colocar a borda preta no elemento selecionado
+    elemBolinha.classList.add("border-black");
+    elemBolinha.classList.remove("border-gray-300");
+
+    // Mudar o texto da personalização
+    elemTextoPersonalizacao.innerText = textoCor;
+
+    // Mudar o src da imagem
+    elemImgCarteira.src = elemImgCarteira.src.replace(corAtual, novaCor);
+
+    // Atualizar a cor atual na nossa imagem
+    elemImgCarteira.setAttribute("data-cor-atual", novaCor);
+  });
+});

@@ -6,6 +6,9 @@
     <title>Jouse - Série 1 | 18 fev 2025</title>
 
     <link rel="stylesheet" href="css/output.css" />
+
+    <!-- CSS do AOS Animate  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="font-avenir text-[0.937rem] leading-tight -tracking-[0.06em]">
     <header
@@ -173,22 +176,28 @@
               <p class="font-avenir_heavy text-lg lg:text-xl">
                 Personalize o acabamento
               </p>
-              <p class="text-[0.9375rem] text-gray-400">Grafite ou prata</p>
+              <p class="js-texto-cor text-[0.9375rem] text-gray-400">
+                Grafite ou prata
+              </p>
             </div>
 
             <!-- Circulos Coloridos -->
 
             <div class="flex justify-center gap-1">
               <div
-                class="flex h-10 w-10 items-center justify-center rounded-full border border-black bg-white"
+                data-cor="grafite"
+                data-texto-cor="Grafite ou prata"
+                class="js-bolinha flex h-10 w-10 items-center justify-center rounded-full border border-black bg-white"
               >
                 <div
-                  class="h-[1.875rem] w-[1.875rem] cursor-pointer rounded-full border border-gray-300 bg-gradient-to-t from-gray-600 to-gray-500"
+                  class="h-[1.875rem] w-[1.875rem] cursor-pointer rounded-full border border-gray-300 bg-gradient-to-t from-gray-500 to-gray-400"
                 ></div>
               </div>
 
               <div
-                class="flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 bg-white"
+                data-cor="vermelho"
+                data-texto-cor="Vermelho"
+                class="js-bolinha flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 bg-white"
               >
                 <div
                   class="h-[1.875rem] w-[1.875rem] cursor-pointer rounded-full border border-gray-300 bg-gradient-to-t from-red-600 to-red-500"
@@ -196,7 +205,9 @@
               </div>
 
               <div
-                class="flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 bg-white"
+                data-cor="azul"
+                data-texto-cor="Azul"
+                class="js-bolinha flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 bg-white"
               >
                 <div
                   class="h-[1.875rem] w-[1.875rem] cursor-pointer rounded-full border border-gray-300 bg-gradient-to-t from-blue-600 to-blue-500"
@@ -204,7 +215,9 @@
               </div>
 
               <div
-                class="flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 bg-white"
+                data-cor="verde"
+                data-texto-cor="Verde"
+                class="js-bolinha flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 bg-white"
               >
                 <div
                   class="h-[1.875rem] w-[1.875rem] cursor-pointer rounded-full border border-gray-300 bg-gradient-to-t from-emerald-500 to-emerald-400"
@@ -216,9 +229,11 @@
           <img
             src="https://www.jouse.com.br/static/img/presentation/jouse-serie-1/design/grafite.jpg"
             alt="img carteiras"
+            class="js-img-carteira"
+            data-cor-atual="grafite"
           />
 
-          <div class="grid max-w-[13rem] text-center">
+          <div data-aos="fade-up" class="grid max-w-[13rem] text-center">
             <img
               class="mx-auto h-[3rem]"
               src="https://www.jouse.com.br/static/img/common/icon/icon_leather.svg"
@@ -241,5 +256,11 @@
     <!-- Scripts Próprios -->
 
     <script src="js/script.js"></script>
+
+    <!-- Script AOS Animate -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
