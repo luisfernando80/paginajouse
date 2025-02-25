@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+*,
+*::after,
+*::before {
+  letter-spacing: -0.06em;
+}
+
 @font-face {
   font-family: "Avenir";
   src: url(../fonts/AvenirLTStd-Book.otf);

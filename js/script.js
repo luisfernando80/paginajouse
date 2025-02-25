@@ -21,6 +21,8 @@ elemHeader.addEventListener("click", () => {
 // PERSONALIZAÇÃO CARTEIRA
 
 const elemImgCarteira = document.querySelector(".js-img-carteira");
+const elemPictureCarteira = elemImgCarteira.parentElement;
+const elemPictureSource = elemPictureCarteira.querySelector("source");
 const elemTextoPersonalizacao = document.querySelector(".js-texto-cor");
 const elemsBolinha = document.querySelectorAll(".js-bolinha");
 
@@ -43,8 +45,12 @@ elemsBolinha.forEach((elemBolinha) => {
     // Mudar o texto da personalização
     elemTextoPersonalizacao.innerText = textoCor;
 
-    // Mudar o src da imagem
-    elemImgCarteira.src = elemImgCarteira.src.replace(corAtual, novaCor);
+    // Mudar o src da imagem e o srcset do source
+    elemImgCarteira.src = elemImgCarteira.src.replaceAll(corAtual, novaCor);
+    elemPictureSource.srcset = elemPictureSource.srcset.replaceAll(
+      corAtual,
+      novaCor,
+    );
 
     // Atualizar a cor atual na nossa imagem
     elemImgCarteira.setAttribute("data-cor-atual", novaCor);

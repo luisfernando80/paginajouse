@@ -10,7 +10,7 @@
     <!-- CSS do AOS Animate  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
-  <body class="font-avenir text-[0.937rem] leading-tight -tracking-[0.06em]">
+  <body class="font-avenir text-[0.937rem] leading-tight">
     <header
       class="grid grid-rows-[3.75rem_0fr] border-b border-gray-200 transition-all duration-300 lg:h-auto"
     >
@@ -145,24 +145,24 @@
         class="border-b border-gray-200 px-4 py-12 lg:px-9 lg:py-[4.5rem]"
       >
         <div
-          class="mx-auto grid max-w-xl justify-items-center gap-12 lg:max-w-[53.125rem]"
+          class="mx-w-[36rem] mx-auto grid justify-items-center gap-8 sm:max-w-xl sm:gap-12 lg:max-w-[53.125rem] lg:gap-16"
         >
           <img
             class="w-[5.46875rem]"
             src="https://www.jouse.com.br/static/img/logo/jouse-serie-1.svg"
             alt="img jouse serie 1"
           />
-          <div class="grid justify-items-center gap-6 lg:max-w-[37.5rem]">
+          <div
+            class="grid max-w-[33.75rem] justify-items-center gap-6 pr-4 lg:max-w-[37.5rem]"
+          >
             <div class="text-center">
-              <h2
-                class="font-avenir_heavy text-[2rem] -tracking-[0.06em] lg:text-6xl"
-              >
+              <h2 class="font-avenir_heavy text-[2rem] lg:text-6xl">
                 Uma carteira única.
               </h2>
               <h3 class="text-2xl lg:text-3xl">Por dentro e por fora.</h3>
             </div>
 
-            <p class="text-center text-gray-400 lg:text-xl">
+            <p class="text-center text-lg text-gray-400 lg:text-xl">
               A Jouse Série 1 é uma carteira minimalista de excelência
               artesanal, construída em couro nobre e acabada em lindas cores
               personalizáveis. Uma carteira com um design encantador e um
@@ -226,12 +226,24 @@
             </div>
           </div>
 
-          <img
-            src="https://www.jouse.com.br/static/img/presentation/jouse-serie-1/design/grafite.jpg"
-            alt="img carteiras"
-            class="js-img-carteira"
-            data-cor-atual="grafite"
-          />
+          <picture
+            class="w-[calc(100vw_-_1rem)] -translate-x-8 sm:w-full sm:transform-none"
+          >
+            <source
+              media="(min-width: 640px)"
+              srcset="
+                https://www.jouse.com.br/static/img/presentation/jouse-serie-1/design/grafite.jpg,
+                https://www.jouse.com.br/static/img/presentation/jouse-serie-1/design/grafite-2x.jpg 2x
+              "
+            />
+
+            <img
+              src="https://www.jouse.com.br/static/img/presentation/jouse-serie-1/design/grafite-mobile-2x.jpg"
+              alt="img carteiras"
+              class="js-img-carteira pl-0"
+              data-cor-atual="grafite"
+            />
+          </picture>
 
           <div data-aos="fade-up" class="grid max-w-[13rem] text-center">
             <img
@@ -239,8 +251,8 @@
               src="https://www.jouse.com.br/static/img/common/icon/icon_leather.svg"
               alt="img couro nobre"
             />
-            <p class="font-avenir_heavy lg:text-xl">Couro nobre</p>
-            <p class="text-gray-400 lg:text-[0.9375rem]">
+            <p class="font-avenir_heavy text-lg lg:text-xl">Couro nobre</p>
+            <p class="text-sm text-gray-400 lg:text-[0.9375rem]">
               Peles selecionadas a dedo pelos mestres artesãos da Jouse
             </p>
           </div>
@@ -248,8 +260,6 @@
       </section>
 
       <!-- SECAO SOB MEDIDA -->
-
-      <section></section>
     </main>
     <footer></footer>
 
