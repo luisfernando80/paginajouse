@@ -25,3 +25,7 @@
 .animate-timeline-view-\[65\%_0\%\] {
   animation-timeline: view(65% 0%);
 }
+
+.animate-timeline-view-\[60\%_0\%\] {
+  animation-timeline: view(60% 0%);
+}

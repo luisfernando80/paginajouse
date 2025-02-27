@@ -12,6 +12,10 @@ module.exports = {
           "0%": { transform: "translate(-50%,0)" },
           "100%": { transform: "translate(-50%,-50%)" },
         },
+        "subir-texto": {
+          "0%": { transform: "translate(0%,-100%)" },
+          "100%": { transform: "translate(0%,-350%)" },
+        },
       },
     },
     fontFamily: {
