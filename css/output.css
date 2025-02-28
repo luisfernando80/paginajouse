@@ -574,6 +574,10 @@ video {
   left: 7.3vw;
 }
 
+.-left-\[2\.1875rem\] {
+  left: -2.1875rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -585,6 +589,10 @@ video {
 
 .mb-\[9\.8125rem\] {
   margin-bottom: 9.8125rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .block {
@@ -675,12 +683,28 @@ video {
   width: 100vw;
 }
 
+.w-\[74\.15\%\] {
+  width: 74.15%;
+}
+
+.w-\[32\.9375rem\] {
+  width: 32.9375rem;
+}
+
 .min-w-\[75vw\] {
   min-width: 75vw;
 }
 
 .min-w-\[85\.8vw\] {
   min-width: 85.8vw;
+}
+
+.min-w-\[45\.4375rem\] {
+  min-width: 45.4375rem;
+}
+
+.min-w-\[125vw\] {
+  min-width: 125vw;
 }
 
 .max-w-\[13rem\] {
@@ -693,6 +717,10 @@ video {
 
 .max-w-\[75rem\] {
   max-width: 75rem;
+}
+
+.max-w-\[75vw\] {
+  max-width: 75vw;
 }
 
 .basis-2\/5 {
@@ -742,6 +770,20 @@ video {
 .rotate-45 {
   --tw-rotate: 45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes descer-carteira {
+  0% {
+    transform: translate(0%,-25.33%);
+  }
+
+  100% {
+    transform: translate(0%,0%);
+  }
+}
+
+.animate-\[descer-carteira_1ms_linear_both\] {
+  animation: descer-carteira 1ms linear both;
 }
 
 @keyframes subir-dinheiro {
@@ -973,16 +1015,12 @@ video {
   padding-right: 1rem;
 }
 
-.pt-\[35vw\] {
-  padding-top: 35vw;
-}
-
-.pb-0 {
-  padding-bottom: 0px;
-}
-
 .pt-12 {
   padding-top: 3rem;
+}
+
+.pt-\[35vw\] {
+  padding-top: 35vw;
 }
 
 .text-left {
@@ -1130,12 +1168,20 @@ video {
     width: 100%;
   }
 
+  .sm\:w-\[32\.9375rem\] {
+    width: 32.9375rem;
+  }
+
   .sm\:min-w-\[21\.875rem\] {
     min-width: 21.875rem;
   }
 
   .sm\:min-w-\[25rem\] {
     min-width: 25rem;
+  }
+
+  .sm\:min-w-0 {
+    min-width: 0px;
   }
 
   .sm\:max-w-xl {
@@ -1154,6 +1200,10 @@ video {
 
   .sm\:transform-none {
     transform: none;
+  }
+
+  .sm\:justify-items-center {
+    justify-items: center;
   }
 
   .sm\:gap-12 {
@@ -1264,12 +1314,12 @@ video {
     padding-bottom: 4.5rem;
   }
 
-  .lg\:pt-\[6\.25rem\] {
-    padding-top: 6.25rem;
-  }
-
   .lg\:pt-\[4\.5rem\] {
     padding-top: 4.5rem;
+  }
+
+  .lg\:pt-\[6\.25rem\] {
+    padding-top: 6.25rem;
   }
 
   .lg\:text-3xl {
