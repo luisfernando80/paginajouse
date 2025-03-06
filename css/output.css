@@ -578,6 +578,14 @@ video {
   left: 7.3vw;
 }
 
+.right-0 {
+  right: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -595,6 +603,10 @@ video {
   margin-top: 20vw;
 }
 
+.mr-12 {
+  margin-right: 3rem;
+}
+
 .block {
   display: block;
 }
@@ -605,6 +617,14 @@ video {
 
 .grid {
   display: grid;
+}
+
+.aspect-\[1280\/580\] {
+  aspect-ratio: 1280/580;
+}
+
+.aspect-\[1280\/500\] {
+  aspect-ratio: 1280/500;
 }
 
 .h-10 {
@@ -629,6 +649,30 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-80 {
+  height: 20rem;
+}
+
+.h-\[31\.25rem\] {
+  height: 31.25rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-\[18\.75rem\] {
+  height: 18.75rem;
 }
 
 .max-h-8 {
@@ -687,6 +731,14 @@ video {
   width: 100vw;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-\[50vw\] {
+  width: 50vw;
+}
+
 .min-w-\[125vw\] {
   min-width: 125vw;
 }
@@ -697,6 +749,10 @@ video {
 
 .min-w-\[85\.8vw\] {
   min-width: 85.8vw;
+}
+
+.min-w-0 {
+  min-width: 0px;
 }
 
 .max-w-\[13rem\] {
@@ -713,6 +769,22 @@ video {
 
 .max-w-\[75vw\] {
   max-width: 75vw;
+}
+
+.max-w-80 {
+  max-width: 20rem;
+}
+
+.max-w-none {
+  max-width: none;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .basis-2\/5 {
@@ -756,6 +828,16 @@ video {
 
 .translate-y-\[0\.28125rem\] {
   --tw-translate-y: 0.28125rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-\[60\%\] {
+  --tw-translate-x: -60%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-2\/3 {
+  --tw-translate-x: -66.666667%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -873,6 +955,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-12 {
+  gap: 3rem;
 }
 
 .self-start {
@@ -1149,6 +1235,10 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:left-auto {
+    left: auto;
+  }
+
   .sm\:-mt-12 {
     margin-top: -3rem;
   }
@@ -1212,6 +1302,11 @@ video {
     gap: 3rem;
   }
 
+  .sm\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .sm\:pt-32 {
     padding-top: 8rem;
   }
@@ -1227,6 +1322,18 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:left-0 {
+    left: 0px;
+  }
+
+  .lg\:right-0 {
+    right: 0px;
+  }
+
+  .lg\:left-auto {
+    left: auto;
+  }
+
   .lg\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -1241,12 +1348,28 @@ video {
     margin-bottom: 0px;
   }
 
+  .lg\:mr-12 {
+    margin-right: 3rem;
+  }
+
   .lg\:hidden {
     display: none;
   }
 
   .lg\:h-auto {
     height: auto;
+  }
+
+  .lg\:h-80 {
+    height: 20rem;
+  }
+
+  .lg\:h-full {
+    height: 100%;
+  }
+
+  .lg\:h-\[31\.25rem\] {
+    height: 31.25rem;
   }
 
   .lg\:w-\[29\.375rem\] {
@@ -1257,12 +1380,20 @@ video {
     width: auto;
   }
 
+  .lg\:w-\[50vw\] {
+    width: 50vw;
+  }
+
   .lg\:min-w-\[28\.125rem\] {
     min-width: 28.125rem;
   }
 
   .lg\:min-w-\[32\.1875rem\] {
     min-width: 32.1875rem;
+  }
+
+  .lg\:min-w-\[37\.5rem\] {
+    min-width: 37.5rem;
   }
 
   .lg\:max-w-\[37\.5rem\] {
@@ -1277,8 +1408,17 @@ video {
     max-width: 60rem;
   }
 
+  .lg\:max-w-80 {
+    max-width: 20rem;
+  }
+
   .lg\:-translate-x-\[7\.3125rem\] {
     --tw-translate-x: -7.3125rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:translate-x-0 {
+    --tw-translate-x: 0px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -1296,6 +1436,10 @@ video {
 
   .lg\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .lg\:gap-0 {
+    gap: 0px;
   }
 
   .lg\:rounded-2xl {
