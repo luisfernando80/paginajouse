@@ -554,6 +554,40 @@ video {
   display: none;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .absolute {
   position: absolute;
 }
@@ -578,6 +612,10 @@ video {
   left: 7.3vw;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -599,8 +637,16 @@ video {
   margin-top: 4.5rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .block {
   display: block;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -631,6 +677,10 @@ video {
   height: 18.75rem;
 }
 
+.h-\[19\.875rem\] {
+  height: 19.875rem;
+}
+
 .h-\[3\.75rem\] {
   height: 3.75rem;
 }
@@ -655,14 +705,6 @@ video {
   height: 100vh;
 }
 
-.h-\[21\.875rem\] {
-  height: 21.875rem;
-}
-
-.h-\[19\.875rem\] {
-  height: 19.875rem;
-}
-
 .max-h-8 {
   max-height: 2rem;
 }
@@ -677,6 +719,10 @@ video {
 
 .w-4 {
   width: 1rem;
+}
+
+.w-\[1\.85rem\] {
+  width: 1.85rem;
 }
 
 .w-\[1\.875rem\] {
@@ -719,10 +765,6 @@ video {
   width: 100vw;
 }
 
-.w-\[1\.85rem\] {
-  width: 1.85rem;
-}
-
 .min-w-0 {
   min-width: 0px;
 }
@@ -739,12 +781,24 @@ video {
   min-width: 85.8vw;
 }
 
+.min-w-64 {
+  min-width: 16rem;
+}
+
+.min-w-40 {
+  min-width: 10rem;
+}
+
 .max-w-7xl {
   max-width: 80rem;
 }
 
 .max-w-\[13rem\] {
   max-width: 13rem;
+}
+
+.max-w-\[30\.625rem\] {
+  max-width: 30.625rem;
 }
 
 .max-w-\[33\.75rem\] {
@@ -761,18 +815,6 @@ video {
 
 .max-w-none {
   max-width: none;
-}
-
-.max-w-\[16rem\] {
-  max-width: 16rem;
-}
-
-.max-w-\[30\.625rem\] {
-  max-width: 30.625rem;
-}
-
-.max-w-full {
-  max-width: 100%;
 }
 
 .flex-1 {
@@ -948,10 +990,6 @@ video {
   gap: 2rem;
 }
 
-.gap-16 {
-  gap: 4rem;
-}
-
 .self-start {
   align-self: flex-start;
 }
@@ -1018,24 +1056,12 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-gradient-to-t {
-  background-image: linear-gradient(to top, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\'\'\)\] {
-  background-image: url('');
-}
-
-.bg-\[url\(\'https\:\/\/www\.jouse\.com\.br\/static\/img\/presentation\/jouse-serie-1\/mostreviewed_banner\.jpg\'\)\] {
-  background-image: url('https://www.jouse.com.br/static/img/presentation/jouse-serie-1/mostreviewed_banner.jpg');
-}
-
-.bg-\[url\(\'https\:\/\/www\.jouse\.com\.br\/static\/img\/presentation\/jouse-serie-1\/mostreviewed_banner-tablet-2x\.jpg\'\)\] {
-  background-image: url('https://www.jouse.com.br/static/img/presentation/jouse-serie-1/mostreviewed_banner-tablet-2x.jpg');
-}
-
 .bg-\[url\(\'https\:\/\/www\.jouse\.com\.br\/static\/img\/presentation\/jouse-serie-1\/mostreviewed_banner-mobile-2x\.jpg\'\)\] {
   background-image: url('https://www.jouse.com.br/static/img/presentation/jouse-serie-1/mostreviewed_banner-mobile-2x.jpg');
+}
+
+.bg-gradient-to-t {
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 
 .from-blue-600 {
@@ -1086,10 +1112,6 @@ video {
   background-position: center;
 }
 
-.bg-no-repeat {
-  background-repeat: no-repeat;
-}
-
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1103,6 +1125,45 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.py-\[4\.5rem\] {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-\[0\.8125rem\] {
+  padding-left: 0.8125rem;
+  padding-right: 0.8125rem;
+}
+
+.py-\[0\.0625rem\] {
+  padding-top: 0.0625rem;
+  padding-bottom: 0.0625rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
 }
 
 .pl-0 {
@@ -1123,10 +1184,6 @@ video {
 
 .pt-\[35vw\] {
   padding-top: 35vw;
-}
-
-.pb-0 {
-  padding-bottom: 0px;
 }
 
 .text-left {
@@ -1190,14 +1247,6 @@ video {
   font-weight: 700;
 }
 
-.leading-tight {
-  line-height: 1.25;
-}
-
-.leading-none {
-  line-height: 1;
-}
-
 .leading-3 {
   line-height: .75rem;
 }
@@ -1210,9 +1259,27 @@ video {
   line-height: 1.375;
 }
 
+.leading-tight {
+  line-height: 1.25;
+}
+
+.leading-5 {
+  line-height: 1.25rem;
+}
+
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity, 1));
+}
+
+.text-green-500 {
+  --tw-text-opacity: 1;
+  color: rgb(34 197 94 / var(--tw-text-opacity, 1));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .opacity-0 {
@@ -1276,6 +1343,11 @@ video {
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-neutral-800:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 38 38 / var(--tw-bg-opacity, 1));
 }
 
 @media (min-width: 640px) {
@@ -1359,12 +1431,12 @@ video {
     padding-right: 0px;
   }
 
-  .sm\:pt-32 {
-    padding-top: 8rem;
-  }
-
   .sm\:pb-12 {
     padding-bottom: 3rem;
+  }
+
+  .sm\:pt-32 {
+    padding-top: 8rem;
   }
 
   .sm\:text-\[0\.9375rem\] {
@@ -1491,10 +1563,6 @@ video {
 
   .lg\:border-0 {
     border-width: 0px;
-  }
-
-  .lg\:bg-\[url\(\'https\:\/\/www\.jouse\.com\.br\/static\/img\/presentation\/jouse-serie-1\/mostreviewed_banner\.jpg\'\)\] {
-    background-image: url('https://www.jouse.com.br/static/img/presentation/jouse-serie-1/mostreviewed_banner.jpg');
   }
 
   .lg\:px-9 {
