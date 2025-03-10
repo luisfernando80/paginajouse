@@ -3,7 +3,7 @@
 const elemHeader = document.querySelector("header");
 const elemMenu = document.querySelector(".js-menu");
 
-elemHeader.addEventListener("click", () => {
+elemMenu.addEventListener("click", () => {
   const barras = elemMenu.querySelectorAll("div");
   const barraCima = barras[0];
   const barraBaixo = barras[1];
